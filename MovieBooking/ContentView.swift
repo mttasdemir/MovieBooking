@@ -8,12 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var activeTab: Tab = .ticket
+    
+    init() {
+        UITabBar.appearance().isHidden = true
+    }
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        VStack(spacing: .zero) {
+            TabView(selection: $activeTab) {
+                Text("Home").tag(Tab.home)
+                Text("Category").tag(Tab.category)
+                TicketView().tag(Tab.ticket)
+                Text("Location").tag(Tab.location)
+                Text("Profile").tag(Tab.profile)
+            }
+            TabBar(selectedTab: $activeTab)
         }
     }
 }

@@ -10,6 +10,8 @@
 		0D32AEA629917F9E004B60C8 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32AEA529917F9E004B60C8 /* MyUtils.swift */; };
 		0D3CFFB3298FC676007F975B /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3CFFB2298FC676007F975B /* Ticket.swift */; };
 		0D521F252987065C00552BC8 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521F242987065C00552BC8 /* TicketView.swift */; };
+		0D65429A29A9EFF800014E58 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D65429929A9EFF800014E58 /* Tab.swift */; };
+		0D65429C29A9FF6C00014E58 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D65429B29A9FF6C00014E58 /* TabBar.swift */; };
 		0D84FDB22997812A00FA033C /* TicketDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D84FDB12997812A00FA033C /* TicketDeck.swift */; };
 		3314727D28B03430000AFD83 /* StatusUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3314727C28B03430000AFD83 /* StatusUI.swift */; };
 		3314728128B038C1000AFD83 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3314728028B038C1000AFD83 /* RoundButton.swift */; };
@@ -30,6 +32,8 @@
 		0D32AEA529917F9E004B60C8 /* MyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
 		0D3CFFB2298FC676007F975B /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
 		0D521F242987065C00552BC8 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = SOURCE_ROOT; };
+		0D65429929A9EFF800014E58 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		0D65429B29A9FF6C00014E58 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		0D84FDB12997812A00FA033C /* TicketDeck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketDeck.swift; sourceTree = "<group>"; };
 		3314727C28B03430000AFD83 /* StatusUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUI.swift; sourceTree = "<group>"; };
 		3314728028B038C1000AFD83 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 			children = (
 				33D8598D28AC0EA600C842CF /* TicketData.swift */,
 				33D8598F28AC10A500C842CF /* PosterData.swift */,
+				0D65429929A9EFF800014E58 /* Tab.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			children = (
 				33D8599628AC1E4D00C842CF /* CircleBackground.swift */,
 				3314727C28B03430000AFD83 /* StatusUI.swift */,
+				0D65429B29A9FF6C00014E58 /* TabBar.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -231,10 +237,12 @@
 				3314727D28B03430000AFD83 /* StatusUI.swift in Sources */,
 				0D32AEA629917F9E004B60C8 /* MyUtils.swift in Sources */,
 				3314728128B038C1000AFD83 /* RoundButton.swift in Sources */,
+				0D65429C29A9FF6C00014E58 /* TabBar.swift in Sources */,
 				0D3CFFB3298FC676007F975B /* Ticket.swift in Sources */,
 				0D521F252987065C00552BC8 /* TicketView.swift in Sources */,
 				33D8599B28AC26E000C842CF /* CircleButton.swift in Sources */,
 				33D8599028AC10A500C842CF /* PosterData.swift in Sources */,
+				0D65429A29A9EFF800014E58 /* Tab.swift in Sources */,
 				33D8599728AC1E4D00C842CF /* CircleBackground.swift in Sources */,
 				33D8597C28ABDDCB00C842CF /* MovieBookingApp.swift in Sources */,
 				0D84FDB22997812A00FA033C /* TicketDeck.swift in Sources */,

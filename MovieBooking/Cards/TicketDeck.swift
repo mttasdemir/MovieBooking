@@ -34,26 +34,27 @@ struct InfiniteStackView: View {
         self.ticket = ticket
     }
     
-    @GestureState var dragValue: CGFloat = .zero
+    @State var dragValue: CGFloat = .zero
     var dragGesture: some Gesture {
         DragGesture()
-            .updating($dragValue) { currentValue, state, _ in
-                state = currentValue.translation.width
-            }
             .onChanged { currentValue in
-                let value = currentValue.translation.width
-                if value < 0 {
-                   height = (-value/screenWidth)*40
+                dragValue = currentValue.translation.width
+                if dragValue < 0 {
+                   height = (-dragValue/screenWidth)*40
                 }
             }
             .onEnded { currentValue in
                 let swipeRight = currentValue.translation.width > screenWidth/2
                 let swipeLeft = -currentValue.translation.width > screenWidth/2
-                if swipeRight {
-                    moveToBackOfDeck()
-                }
-                if swipeLeft {
-                    removeFromDeck()
+                withAnimation(.easeInOut(duration: 0.7)) {
+                    if swipeRight {
+                        moveToBackOfDeck()
+                    }
+                    if swipeLeft {
+                        removeFromDeck()
+                    }
+                    height = .zero
+                    dragValue = .zero
                 }
             }
     }
