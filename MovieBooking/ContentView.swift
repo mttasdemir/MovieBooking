@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var activeTab: Tab = .ticket
+    @State private var activeTab: Tab = .home
     
     init() {
         UITabBar.appearance().isHidden = true
@@ -17,7 +17,7 @@ struct ContentView: View {
     var body: some View {
         VStack(spacing: .zero) {
             TabView(selection: $activeTab) {
-                Text("Home").tag(Tab.home)
+                HomeView().tag(Tab.home)
                 Text("Category").tag(Tab.category)
                 TicketView().tag(Tab.ticket)
                 Text("Location").tag(Tab.location)

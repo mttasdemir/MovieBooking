@@ -40,9 +40,16 @@ struct DateButton: View {
             .cornerRadius(10)
             .overlay {
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(LinearGradient(colors: isSelected ? selectedBorderColors : currentBorderColors, startPoint: .topLeading, endPoint: .bottomTrailing), style: StrokeStyle(lineWidth: 2))
-                    .frame(width: width - 1, height: height - 1)
+                    .strokeBorder(LinearGradient(colors: isSelected ? selectedBorderColors : currentBorderColors, startPoint: .topLeading, endPoint: .bottomTrailing), style: StrokeStyle(lineWidth: 2))
+                    //.frame(width: width - 1, height: height - 1)
             }
         }
+    }
+}
+
+
+struct DateButton_Preview: PreviewProvider {
+    static var previews: DateButton {
+        DateButton(isSelected: .constant(false))
     }
 }
