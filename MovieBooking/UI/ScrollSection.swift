@@ -20,8 +20,13 @@ struct ScrollSection: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 10) {
                     ForEach(posters, id: \.self) { poster in
-                        Image(poster)
-                            .clipShape(RoundedCorner(radius: 15))
+                        NavigationLink {
+                            BookingView()
+                        } label: {
+                            Image(poster)
+                                .cornerRadius(15, corners: [UIRectCorner.topLeft, UIRectCorner.bottomRight])
+                            //.clipShape(RoundedCorner(radius: 15))
+                        }
                     }
                 }
             }

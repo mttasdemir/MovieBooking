@@ -15,16 +15,19 @@ struct ContentView: View {
     }
     
     var body: some View {
-        VStack(spacing: .zero) {
-            TabView(selection: $activeTab) {
-                HomeView().tag(Tab.home)
-                Text("Category").tag(Tab.category)
-                TicketView().tag(Tab.ticket)
-                Text("Location").tag(Tab.location)
-                Text("Profile").tag(Tab.profile)
+        NavigationView {
+            VStack(spacing: .zero) {
+                TabView(selection: $activeTab) {
+                    HomeView().tag(Tab.home)
+                    Text("Category").tag(Tab.category)
+                    TicketView().tag(Tab.ticket)
+                    Text("Location").tag(Tab.location)
+                    Text("Profile").tag(Tab.profile)
+                }
+                TabBar(selectedTab: $activeTab)
             }
-            TabBar(selectedTab: $activeTab)
         }
+        .ignoresSafeArea()
     }
 }
 

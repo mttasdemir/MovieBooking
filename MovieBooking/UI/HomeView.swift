@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HomeView: View {
     @State private var animate: Bool = false
+    
     var body: some View {
         ZStack {
             CircleBackground(color: Color("cyan"))
@@ -40,6 +41,7 @@ struct HomeView: View {
                     .padding(.top, 20)
                 }
             }
+            //.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
         }
         .background(LinearGradient(gradient: Gradient(colors: [Color("backgroundColor"), Color("backgroundColor2")]), startPoint: .top, endPoint: .bottom))
     }
