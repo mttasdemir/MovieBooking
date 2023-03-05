@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D32AEA629917F9E004B60C8 /* MyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D32AEA529917F9E004B60C8 /* MyUtils.swift */; };
 		0D3CFFB3298FC676007F975B /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D3CFFB2298FC676007F975B /* Ticket.swift */; };
+		0D47654F29B4C8140077006B /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D47654E29B4C8140077006B /* CustomButton.swift */; };
 		0D521F252987065C00552BC8 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D521F242987065C00552BC8 /* TicketView.swift */; };
 		0D54D92B29B21C8600CDAAB9 /* RectangleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D54D92A29B21C8600CDAAB9 /* RectangleButton.swift */; };
 		0D65429A29A9EFF800014E58 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D65429929A9EFF800014E58 /* Tab.swift */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		0D32AEA529917F9E004B60C8 /* MyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyUtils.swift; sourceTree = "<group>"; };
 		0D3CFFB2298FC676007F975B /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		0D47654E29B4C8140077006B /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0D521F242987065C00552BC8 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = SOURCE_ROOT; };
 		0D54D92A29B21C8600CDAAB9 /* RectangleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleButton.swift; sourceTree = "<group>"; };
 		0D65429929A9EFF800014E58 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				0DA441C329B14A1B00DA252E /* MyCircleButton.swift */,
 				0D54D92A29B21C8600CDAAB9 /* RectangleButton.swift */,
 				0DEC88B729B39755000D5997 /* LargeButton.swift */,
+				0D47654E29B4C8140077006B /* CustomButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D47654F29B4C8140077006B /* CustomButton.swift in Sources */,
 				33D8599228AC179800C842CF /* TimeButton.swift in Sources */,
 				33D8597E28ABDDCB00C842CF /* ContentView.swift in Sources */,
 				0D94377A29AFF3AE00625570 /* ScrollSection.swift in Sources */,

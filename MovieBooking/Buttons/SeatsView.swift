@@ -28,7 +28,7 @@ struct SeatsView: View {
             }
             
             Image("frontSeat")
-                .glow(color: Color("pink"), radius: 10)
+                .glow(color: Color("pink"), radius: 15)
             
             Image("seats")
                 .padding(.top, 20)

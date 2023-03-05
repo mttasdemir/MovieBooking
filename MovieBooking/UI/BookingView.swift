@@ -10,7 +10,7 @@ import SwiftUI
 struct BookingView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var isDateSelected: Bool = false
-    @State private var dateSelected: Bool = true
+    @State private var dateSelected: Bool = false
     
     var body: some View {
         NavigationView {
@@ -41,7 +41,7 @@ struct BookingView: View {
                             DateButton(weekDay: "Mon", numDay: "1", isSelected: $isDateSelected)
                                 .offset(y: 30)
                             DateButton(weekDay: "Mon", numDay: "1", width: 70, height: 100, isSelected: $dateSelected) {
-                                withAnimation { dateSelected.toggle() }
+                                withAnimation(.easeInOut(duration: 0.5)) { dateSelected.toggle() }
                             }
                             DateButton(weekDay: "Mon", numDay: "1", isSelected: $isDateSelected)
                                 .offset(y: 30)
@@ -66,6 +66,7 @@ struct BookingView: View {
                         } label: {
                             LargeButton()
                                 .padding(.top, 50)
+                                .offset(y: dateSelected ? 0 : 300)
                         }
                     }
                     .padding(.bottom, 10)
